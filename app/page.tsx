@@ -25,7 +25,7 @@ export default function Home() {
         </nav>
         <div className="ml-4 flex items-center gap-2">
           <Link href="/login">
-            <Button variant="outline" size="sm" className="border-warm-beige text-warm-beige hover:bg-warm-beige/10">
+            <Button variant="outline" size="sm" className="border-warm-beige text-dark-blue hover:bg-warm-beige/85">
               Iniciar Sesión
             </Button>
           </Link>
@@ -76,9 +76,9 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className="mx-auto w-full max-w-[500px] aspect-video relative rounded-xl overflow-hidden shadow-xl">
+              <div className="mx-auto w-full max-w-[1200px] aspect-video relative rounded-xl overflow-hidden shadow-xl">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="Family_Photo.png"
                   alt="Sesión de fotos"
                   width={800}
                   height={600}
