@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 39 80% 97%;
+    --foreground: 215 27% 21%;
+
+    --card: 39 80% 97%;
+    --card-foreground: 215 27% 21%;
+
+    --popover: 39 80% 97%;
+    --popover-foreground: 215 27% 21%;
+
+    --primary: 17 48% 51%;
+    --primary-foreground: 39 80% 97%;
+
+    --secondary: 210 20% 60%;
+    --secondary-foreground: 215 27% 21%;
+
+    --muted: 25 10% 90%;
+    --muted-foreground: 25 5% 45%;
+
+    --accent: 39 80% 82%;
+    --accent-foreground: 215 27% 21%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 39 80% 97%;
+
+    --border: 25 10% 80%;
+    --input: 25 10% 80%;
+    --ring: 17 48% 51%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 215 27% 21%;
+    --foreground: 39 80% 97%;
+
+    --card: 215 27% 21%;
+    --card-foreground: 39 80% 97%;
+
+    --popover: 215 27% 21%;
+    --popover-foreground: 39 80% 97%;
+
+    --primary: 17 48% 51%;
+    --primary-foreground: 39 80% 97%;
+
+    --secondary: 210 20% 40%;
+    --secondary-foreground: 39 80% 97%;
+
+    --muted: 215 27% 30%;
+    --muted-foreground: 25 10% 80%;
+
+    --accent: 17 48% 40%;
+    --accent-foreground: 39 80% 97%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 39 80% 97%;
+
+    --border: 215 27% 30%;
+    --input: 215 27% 30%;
+    --ring: 17 48% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-in-out forwards;
+  }
+
+  .animate-pulse-subtle {
+    animation: pulseShadow 3s infinite;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pulseShadow {
+    0% {
+      box-shadow: 0 0 0 0 rgba(190, 110, 70, 0.3);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(190, 110, 70, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(190, 110, 70, 0);
+    }
+  }
+
+  .bg-warm-beige {
+    background-color: #f7dba7;
+  }
+
+  .bg-dark-blue {
+    background-color: #283044;
+  }
+
+  .bg-medium-blue {
+    background-color: #78a1bb;
+  }
+
+  .bg-warm-gray {
+    background-color: #8b786d;
+  }
+
+  .bg-terracotta {
+    background-color: #be6e46;
+  }
+
+  .text-warm-beige {
+    color: #f7dba7;
+  }
+
+  .text-dark-blue {
+    color: #283044;
+  }
+
+  .text-medium-blue {
+    color: #78a1bb;
+  }
+
+  .text-warm-gray {
+    color: #8b786d;
+  }
+
+  .text-terracotta {
+    color: #be6e46;
+  }
+
+  .border-warm-beige {
+    border-color: #f7dba7;
+  }
+
+  .border-dark-blue {
+    border-color: #283044;
+  }
+
+  .border-medium-blue {
+    border-color: #78a1bb;
+  }
+
+  .border-warm-gray {
+    border-color: #8b786d;
+  }
+
+  .border-terracotta {
+    border-color: #be6e46;
+  }
+
+  .fill-terracotta {
+    fill: #be6e46;
+  }
+}
+
